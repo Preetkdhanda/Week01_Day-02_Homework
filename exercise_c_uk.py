@@ -26,9 +26,17 @@ united_kingdom = [
 # 3. Use a loop to print the names of all the countries in the UK.
 # 4. Use a loop to find the total population of the UK.
 
-united_kingdom["name" : "Wales"]["capital" :"Swansea"] = "Cardiff"
-
-for countries in united_kingdom:
-  print(f"The countries in the united kingdom are {['name']}")
+united_kingdom[1]["capital"] = "Cardiff"
 
 
+
+for country in united_kingdom:
+  print(f"The countries in the united kingdom are {country['name']}")
+
+total_population = 0
+
+for total_population in united_kingdom:
+  total_population += (united_kingdom["population"])
+  
+
+print(f"{total_population} is the number of people in the United Kingdom")
